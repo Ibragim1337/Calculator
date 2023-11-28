@@ -63,9 +63,6 @@ document.querySelector('.buttons-container').onclick = (event) => {
       case "X":
         a = a * b;
         break;
-      case "%":
-        a = a % b;
-        break;
       case '/':
         if (b === "0"){
           out.textContent = "на ноль делишь?"
