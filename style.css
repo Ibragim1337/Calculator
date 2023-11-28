@@ -9,6 +9,17 @@ body {
   border-radius: 20px;
 }
 
+.buttons-container{
+  display: grid;
+  grid-template-areas: 
+  "ac switch percentage division"
+  "seven eight nine multiply"
+  "four five six minus"
+  "one two three plus"
+  "zero zero dot equal";
+  grid-gap: 4px;
+}
+
 .btn{
   background-color: white;
   border: 2px solid grey;
