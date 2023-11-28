@@ -4,9 +4,30 @@ body {
 }
 .calc-container {
   width: 500px;
-  height: 500px;
+  height: auto;
   background-color: rgb(233, 233, 233);
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.pNumbers {
+  text-align: right;
+  font-size: 6rem;
+  margin: 0;
+}
+
+.calc-screen{
+  border: 2px solid black;
+  width: 90%;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  align-self: center;
+  margin: 10px 0;
+  overflow: hidden;
 }
 
 .buttons-container{
@@ -16,8 +37,10 @@ body {
   "seven eight nine multiply"
   "four five six minus"
   "one two three plus"
-  "zero zero dot equal";
+  "zero dot equal equal";
   grid-gap: 4px;
+  justify-items: center;
+  margin: 10px;
 }
 
 .btn{
@@ -33,8 +56,14 @@ body {
   user-select: none;
 }
 
+.zero{
+  grid-area: zero;
+}
+
 .equal{
   color: white;
+  grid-area: equal;
+  width: 83%;
 }
 
 .btn:hover {
@@ -50,9 +79,15 @@ body {
 }
 
 .equal:hover {
-  background-color: rgb(80, 80, 248);
+  background-color: rgb(64, 64, 196);
 }
 
 .equal:active {
   background-color: rgb(59, 59, 179);
+}
+
+@media screen and (max-width: 440px)  {
+  .equal{
+    width: 90%;
+  }
 }
