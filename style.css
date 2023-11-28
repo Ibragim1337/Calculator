@@ -5,6 +5,6 @@ body {
 .calc-container {
   width: 500px;
   height: 500px;
-  background-color: black;
+  background-color: rgb(233, 233, 233);
   border-radius: 20px;
 }
