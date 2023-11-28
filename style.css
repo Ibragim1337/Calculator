@@ -15,11 +15,12 @@ body {
 .pNumbers {
   text-align: right;
   font-size: 6rem;
-  margin: 0;
+  margin: 0 5px 0 0;
 }
 
 .calc-screen{
   border: 2px solid black;
+  background-color: white;
   width: 90%;
   height: 200px;
   border-radius: 20px;
