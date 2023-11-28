@@ -1,6 +1,7 @@
 body {
   display: flex;
   justify-content: center;
+  font-family: sans-serif;
 }
 .calc-container {
   width: 500px;
